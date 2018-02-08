@@ -1,9 +1,9 @@
 function three(t) {
     if (t < 1000 && t > 99) {
-        return true
+        return "true"
     }
     else {
-        return false
+        return "false"
     }
 } 
-console.log(three(99));
+console.log(three(994));
