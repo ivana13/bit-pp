@@ -1,11 +1,11 @@
-function noa(slovo, string) {
-    var brojac = 0;
-
-    for (i = 0; i < ; i++) {
-        if () {
-            brojac++;
+function howManyLetters(word, letter) {
+    var sum = 0;
+    for (let i = 0; i < word.length; i++) {
+        if (word[i] === letter || word[i] === letter.toUpperCase()) {
+            sum += 1;
         }
     }
-    return brojac;
+    return sum;
 }
-console.log(noa(x, a));
+
+console.log(howManyLetters("ivaAna", "a"));
