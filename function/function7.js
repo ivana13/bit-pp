@@ -1,3 +1,5 @@
+'use strict';
+
 function brojac(a) {
     var broj = 0;
     var cifra;

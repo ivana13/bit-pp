@@ -1,3 +1,5 @@
+'use strict';
+
 function crte(a, b, c) {
     var res = "";
     for (var i = 1; i <= a; i++) {

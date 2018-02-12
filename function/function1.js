@@ -1,3 +1,5 @@
+
+"use strict";
 function max(a, b, d) {
     var c = a*b*d;
     return c;

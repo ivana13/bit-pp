@@ -1,6 +1,8 @@
+'use strict';
 
 
 function sum(a, b, c, d) {
+
     var x=(a + b + c +d)/4;
     return x;
 }
