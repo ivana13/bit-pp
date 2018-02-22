@@ -33,15 +33,36 @@
         }
 
         this.getAveragePrice = function () {
-            var AveragePrice = 0;
-          
-            
-            for (var i = 0; i < this.listOfProducts.length; i++){
-                var AveragePrice = this.listOfProducts [i];
-                AveragePrice += product.
+            var totalPrice = 0;
+
+
+            for (var i = 0; i < this.listOfProducts.length; i++) {
+                var product = this.listOfProducts[i];
+                totalPrice += product.price;
             }
+
+            var averagePrice = totalPrice / this.listOfProducts.length;
+
+            return averagePrice;
         }
 
+        this.mostExpencive = function () {
+            var mostExpensive = 0;
+            var output = {};
+
+            for (var i = 0; i < this.listOfProducts.length; i++) {
+                var product = this.listOfProducts[i];
+                
+                if (product.price > mostExpensive) {
+                    mostExpensive = product.price;
+                    output = product;
+                }
+
+            }
+
+
+       return output;
+        }
     }
 
     function PaymentCard(acountBalance, status, date) {
@@ -51,18 +72,23 @@
     }
 
     var pro1 = new Product(12345, "Banana", 12.33);
-    var pro2 = new Product(33334, "Ananas", 13.13);
     var pro3 = new Product(43234, "Mango", 59.15);
+    var pro2 = new Product(33334, "Ananas", 13.13);
 
     var sb = new ShoppingBag()
     var sb2 = new ShoppingBag();
     sb.addProduct(pro1)
-    sb.addProduct(pro2)
     sb.addProduct(pro3)
+    sb.addProduct(pro2)
 
-    console.log(pro1.getInfo());
+     console.log(pro1.getInfo());
     console.log(sb.getTotalPrice());
+     console.log(sb.getAveragePrice());
+    console.log(sb.mostExpencive());
     
+
+
+
     // console.log("sb\n", sb.listOfProducts);
     // console.log("sb2\n", sb2.listOfProducts);
 
