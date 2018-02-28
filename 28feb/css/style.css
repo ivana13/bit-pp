@@ -1,0 +1,13 @@
+input, select {
+    display: block;
+}
+
+main {
+    background-color: orangered;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input {
+    margin: 5% 0;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <h1>Movie list</h1>
+        <form>
+            <input type="text" id="movie-title" value="" placeholder="Title">
+            <input type="number" id="movie-length" value="" placeholder="Length">
+            <select id="genre-select">
+                <option value="none"></option>
+                <option value="drama">Drama</option>
+                <option value="action">Action</option>
+            </select>
+
+            <input class="create-movie" type="button" value="Create movie">
+
+            <div class="m-list"></div>
+
+        </form>
+
+        <form>
+            <input type="date" id="program-date" value="">
+            <input id="create-date" type="button" value="Create-date">
+            <input list="movies" name="movies">
+                <datalist id="movies-list">
+                    
+                </datalist>
+                <div class="d-list"></div>
+        </form>
+    </main>
+    <script src="../js/form.js"></script>
+</body>
+
+</html>
