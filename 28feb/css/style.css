@@ -3,11 +3,20 @@ input, select {
 }
 
 main {
-    background-color: orangered;
+   
     margin: 0 auto;
     text-align: center;
+    border: solid 5px black;
+    width: 80%;
 }
 
 input {
     margin: 5% 0;
+}
+
+.first, .second {
+    border: solid 3px black;
+   width: 90%;
+   margin: 0 auto;
+
 }

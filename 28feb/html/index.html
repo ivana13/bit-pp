@@ -12,30 +12,31 @@
 <body>
     <main>
         <h1>Movie list</h1>
-        <form>
-            <input type="text" id="movie-title" value="" placeholder="Title">
-            <input type="number" id="movie-length" value="" placeholder="Length">
-            <select id="genre-select">
-                <option value="none"></option>
-                <option value="drama">Drama</option>
-                <option value="action">Action</option>
-            </select>
+        <div class="first">
+            <form>
+                <input type="text" id="movie-title" value="" placeholder="Title">
+                <input type="number" id="movie-length" value="" placeholder="Length">
+                <select id="genre-select">
+                    <option value="none"></option>
+                    <option value="drama">Drama</option>
+                    <option value="action">Action</option>
+                </select>
 
-            <input class="create-movie" type="button" value="Create movie">
-
-            <div class="m-list"></div>
-
-        </form>
-
+                <input class="create-movie" type="button" value="Create movie">
+                <div class="m-list"></div>
+            </form>
+        </div>
+        <div class="second">
         <form>
             <input type="date" id="program-date" value="">
             <input id="create-date" type="button" value="Create-date">
             <input list="movies" name="movies">
-                <datalist id="movies-list">
-                    
-                </datalist>
-                <div class="d-list"></div>
+            <datalist id="movies-list">
+
+            </datalist>
+            <div class="d-list"></div>
         </form>
+    </div>
     </main>
     <script src="../js/form.js"></script>
 </body>
